@@ -61,7 +61,7 @@ class pylinguistics:
         self.language = strLanguage
         if self.language != "pt" and self.language != "en":
             self.language = "pt"
-        print("language: %s" % self.language)
+
 
     def getFeatures(self):
 

@@ -13,12 +13,12 @@ tagger = None
 
 
 def load_tagger(language):
-    print('LOAD TAGGER....')
+    # print('LOAD TAGGER....')
     global tagger
     if (language == "en"):
         tagger = PerceptronTagger()
     elif (language == "pt-br"):
-        print('tagger pt-br')
+        # print('tagger pt-br')
 
         import nlpnet
         path = os.path.dirname(__file__) + '/resources/pos-pt/'
@@ -109,7 +109,7 @@ def getPosTag(pylinguistObj):
     if tagger is None:
         load_tagger(pylinguistObj.language)
 
-    print(pylinguistObj.language)
+    #print(pylinguistObj.language)
     # print('tokens')
     # print(getTokens('hoje eu vou comer um sanduiche'))
     # print(tagger.tag(getTokens('hoje eu vou comer um sanduiche')))
